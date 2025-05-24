@@ -1,0 +1,93 @@
+# ───── Core Python artifacts ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec          # PyInstaller
+
+# ───── Virtual-environment folders ────────────────────────────────────────
+.env
+.venv
+venv/
+env/
+ENV/
+# Poetry
+poetry.lock
+# Pip-tools
+*.txt
+# Conda
+*.conda
+*.ipynb_checkpoints/
+
+# ───── FastAPI / ASGI specific (Uvicorn, Gunicorn, Hypercorn) ─────────────
+# PID / reload files
+*.pid
+*.pid.lock
+
+# ───── Configuration, secrets & environment values ────────────────────────
+*.env
+*.env.*         # .env.dev, .env.prod …
+secrets.toml
+settings.yaml
+*.key
+*.pem
+
+# ───── IDE & editor settings ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# ───── Testing & coverage ─────────────────────────────────────────────────
+htmlcov/
+.coverage*
+.tox/
+pytest_cache/
+.nox/
+.cache/
+#  coverage.xml keeps Codecov happy; delete if you don’t upload reports
+# coverage.xml
+
+# ───── Type-checking & linting ────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+.pyre/
+ruff_cache/
+
+# ───── Documentation build output ─────────────────────────────────────────
+docs/_build/
+site/
+*.log
+
+# ───── Front-end artifacts (if you bundle JS/CSS with FastAPI) ────────────
+node_modules/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ───── Docker & container orchestration ───────────────────────────────────
+**/.dockerignore
+docker-compose.override.yml
+docker-compose.*.yml
+*.tar          # docker save
+
+# ───── macOS, Windows, Linux noise ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.Trash-*
+*~ 
+*.bak
+*.orig
+
+# ───── Optional: local tool state (*.sqlite etc.) ─────────────────────────
+*.sqlite3
+*.db
+*.log
